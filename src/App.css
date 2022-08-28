@@ -1,0 +1,887 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+#HomePage{
+    overflow-y: hidden;
+}
+
+#home{
+    z-index: 0;
+    color: white;
+    padding-left: 4px;
+}
+#introline{
+    position: absolute;
+    left: 38%;
+    top: 15%;
+    font-size: 20px;
+    font-family: Segoe Print;
+}
+
+#main-heading{
+    font-weight: bolder;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    font-size: 60px;
+    color:aliceblue;
+    font-family: viner hand itc;
+}
+
+#caption{
+    position: absolute;
+    font-family: Segoe Print;
+    top: 35%;
+    font-size: 20px;
+    z-index: 2;
+}
+
+#home-text{
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+#explore{
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    width:170px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    left: 4px;
+    z-index: 2;
+    text-decoration: none;
+    text-align: center;
+}
+
+#explore:hover{
+    cursor: pointer;
+    width: 270px;
+    font-size: 25px;
+    transition: .5s;
+}
+
+#Menu-img{
+    position: absolute;
+    filter: invert(1);
+    right: 15px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border: none;
+    border-radius: 50%;
+}
+
+#Menu-img:hover{
+    cursor: pointer;
+    background-color: white;
+    /* color: black; */
+    filter: invert(0);
+    padding: 8px;
+    transition: .8s;
+}
+
+#Close-img{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    padding: 3px;
+    width: 35px;
+    height: 35px;
+    z-index: 3;
+    background-color: rgb(190, 192, 190);
+    border-radius: 50%;
+    display: none;
+}
+
+#Close-img:hover{
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    transition: .5s;
+}
+
+.side-pannel{
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    height: 100vh;
+    right: 0;
+    border-radius: 80px 0px / 80px;
+    transition: .08s;
+    display: none;
+    z-index: 2;
+    opacity: 0.95;
+    /* border-radius: 25% 10%; */
+    /* border-radius: 10px 100px / 120px; */
+    /* box-shadow: -5px 1px 50px 10px  white; */
+}
+
+nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50%;
+    row-gap: 40px;
+    text-align: center;
+}
+
+.links{
+    text-decoration: none;
+    color: red; 
+    z-index: 4;
+    font-size: 20px;   
+}
+
+#menu-home:hover{
+    padding: 18px;
+    font-size: larger;
+    transition: .5s;
+    background-color: rgb(223, 170, 170);
+    border-radius: 10px;
+    /* width: max-content; */
+}
+
+#menu-about:hover{
+    padding: 18px;
+    font-size: larger;
+    transition: .5s;
+    background-color: rgb(223, 170, 170);
+    border-radius: 10px;
+    /* width: max-content; */
+}
+
+#menu-contact:hover{
+    padding: 18px;
+    font-size: larger;
+    transition: .5s;
+    background-color: rgb(223, 170, 170);
+    border-radius: 10px;
+    /* width: max-content; */
+}
+
+#menu-login:hover{
+    padding: 18px;
+    font-size: larger;
+    transition: .5s;
+    background-color: rgb(223, 170, 170);
+    border-radius: 10px;
+    /* width: max-content; */
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* About Us */
+
+#About{
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;  
+    /* background: #ffffff; */
+    background-image: linear-gradient(to top,#09203f, #537895);
+    font-family: cursive;
+    /* overflow-y: hidden; */
+    /* z-index: 3; */
+}
+
+#aboutHeading{
+    font-size: 70px;
+}
+
+#cards{
+    display: flex;
+    padding: 30px;
+    margin: 30px;
+    align-items: center;
+    justify-content:space-evenly; 
+    /* border: 2px solid red; */
+    /* flex-wrap:wrap;   */
+}
+
+#WhatWedo{
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.devlopers{
+    background-color: #FFFFFF;
+    padding: 20px;
+    /* margin: 20px; */
+    /* border: 2px solid red; */
+    color: #393E46;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+    font-size: 24px;
+    box-shadow: 15px 10px #393E46;
+}
+
+.devlopers:hover{
+    background-color: #00ADB5;
+}
+
+.devlopers:hover{
+    padding: 30px 20px 30px 20px;
+
+    /* margin: 25px 20px 25px 20px; */
+    transition: .5s;
+}
+
+.devlopers img{
+    padding: 15px;
+    border: 2px solid #2C3A47;
+    border-radius: 50%;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* Contact Us */
+
+#contact-heading{
+    font-size: 120px;
+    font-family:fantasy;
+}
+
+#Contact{
+    width: 100%;
+    height: 100vh;  
+    background-color: #353b48;
+    color : white;
+    
+}
+
+#contact-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #CAD3C8;
+    color: black;
+    display: flex; 
+    padding: 10px;  
+    justify-content: space-between;
+}
+
+#contact-address{
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+}
+
+#contact-details{
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+}
+
+#follow{
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family:cursive;
+}
+
+.social img{
+    padding: 10px;
+}
+
+#facebook, #instagram, #twitter{
+    cursor: pointer;
+    font-family:cursive;
+}
+
+#feedback{
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: max-content;
+    text-align: center;
+    font-family:cursive;
+}
+
+.inputs{
+    padding: 10px;
+}
+
+.inputs input{
+    padding: 6px;
+    border-radius: 23px;
+    width: 260px;
+    outline: none;
+}
+
+#submitfeedback{
+    color: #2C3A47;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#submitfeedback:hover{
+    background-color: #2ed573;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* Login */
+
+#Login{
+    width: 100%;
+    height: 100vh;  
+    color : black; 
+    display:flex;
+    background-color: #1e90ff;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Images/Login/BG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    }
+
+.loginBox{
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.loginInputs div{
+    padding: 8px;
+}
+
+#loginMainHeading{
+    color: #57606f;
+    padding-bottom: 20px;
+    
+}
+
+#loginSubHeading{
+    color: #a4b0be;
+    padding-bottom: 20px;
+}
+
+.loginBox input{
+    border: 2px solid #a4b0be;
+    border-radius: 25px;
+    height: 30px;
+    width: 260px;
+    padding: 8px;
+    font-size: large;
+    color: #57606f;
+}
+
+.loginBox input:hover{
+    border: 1px solid #1e90ff;
+    transition: 0.3s;
+}
+
+.loginBox input:focus{
+    border: 3px solid #1e90ff;
+    outline: none;
+}
+
+#loginEye img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 58px;
+    top: 235px;
+    cursor: pointer;
+}
+
+#submit-login{
+    text-decoration: none;
+    color: white;
+    background-color: #1e90ff;
+    padding: 9px 30px 9px 30px;
+    font-size: 30px;
+    width: 100px;
+    border-radius: 23px;
+    width: max-content;
+}
+
+#submit-login:hover{
+    padding: 9px 40px 9px 40px;
+    transition: .3s;
+}
+
+#forgotPassword{
+    padding-top: 30px;
+    color: #57606f;
+    font-size: 20px;
+}
+
+#forgotPasswordLink{
+    text-decoration: none;
+    color: #1e90ff;    
+}
+
+#login-signup{
+    padding-top: 25px;
+    color: #57606f;
+    font-size: 20px;
+}
+
+#create{
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+#loginInvalid{
+    padding-top: 20px;
+    color: red;
+    font-size: 20px;
+    display: none;
+}
+/* ------------------------------------------------------------------------ */
+
+/* Sign-Up */
+
+#signup{
+    width: 100%;
+    height: 100vh;  
+    color : #f1c40f; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Images/SignUp/SignUpBg.jpg');
+    /* background-image:linear-gradient(to top, #ff9a9e, #fad0c4); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    }
+
+.signUpItems{
+    padding: 20px;
+    height: max-content;
+    width:max-content;
+    align-items: center;
+    justify-content: center;
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+.items{
+    padding: 10px;
+}
+
+.items input{
+    border-radius: 23px;
+    height: 30px;
+    width: 260px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #f1c40f;
+    font-size: 20px;
+}
+
+#signupEyeImg img{
+    position: relative;
+    height: 30px;
+    width: 30px;  
+    right: -237px; 
+    top: -35px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+#signUpSecurity{
+    outline: none;
+    border: 1px solid #f1c40f;
+    border-radius: 23px;
+    height: 40px;
+    width: 275px;
+    padding: 5px;
+    font-size: 20px;
+    color: #57606f;
+}
+
+.items input:focus{
+    border: 3px solid #f1c40f;
+}
+
+#signUpCreate{
+    background-color: #f1c40f;
+    /* opacity: 1 !important; */
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#signUpCreate:hover{
+    padding: 10px 20px 10px 20px;
+}
+
+#signUpInvalid{
+    color: red;
+    display: none;
+}
+/* ------------------------------------------------------------------------ */
+
+/* ResetPassword */
+
+#resetPassword{
+    width: 100%;
+    height: 100vh;  
+    color : #ffff; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffffff; */
+    /* background-image: linear-gradient(to bottom, #36d1dc, #5b86e5); */
+    background-image: url('./Images/ForgotPassword/Forgot_image.jpg');
+    }
+
+#change{
+    cursor: pointer;
+    padding: 10px;
+}
+
+#change:hover{
+    color: white;
+    background-color: #2ed573;
+}
+
+#userQuestion{
+    font-size: 20px;
+}
+
+.reset{
+    background-color: #172643;
+    border-radius: 23px;
+    box-shadow: 15px 10px #596275;
+}
+
+.reset div{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.reset div input{
+    padding: 9px;
+    border-radius: 23px;
+    outline: none;
+    width: 260px;
+    font-size: 20px;
+    /* background-color: #F8EFBA; */
+}
+
+.reset div select{
+    padding: 9px;
+    border-radius: 23px;
+    outline: none;
+    width: 265px;
+    font-size: 20px;
+    /* background-color: #F8EFBA; */
+}
+
+/* ------------------------------------------------------------------------ */
+/* Travel */
+
+#Travel{
+    padding: 10px;
+    /* background-image: linear-gradient(#09203f, #537895); */
+    background: #ffffff;
+}
+
+.Imgtext{
+    /* border: 2px solid red; */
+    position: relative;
+    right: 250px;
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    /* top: 50%; */
+}
+
+#textplace{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* top: 50%; */
+}
+
+#tourImages{
+    padding: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#textInfo{
+    position: relative;
+    top: 50%;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(#accbee, #e7f0fd);
+    /* border: 2px solid green; */
+}
+
+
+.btn{
+    font-size: 30px;
+    padding: 40px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn:hover{
+    padding: 50px;
+    transition: .5s;
+    color: black;
+    background-color: #ffffff;
+}
+
+#next{
+    right: 6%;
+}
+
+#prev{
+    left: 6%;
+}
+
+#journey{
+    right: 38%;
+    top: 36%;
+    border-radius: 50%;
+    padding: 110px;
+}
+
+#journey:hover{
+    opacity: 1;
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+}
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------ PlaceInfo --------------------------------------- */
+#PlaceInfo{
+    background-color: #95a5a6;
+    width: 100%;
+    height: 250vh;
+}
+
+#userPlaceInfo{
+    display: flex;
+    justify-content:space-evenly;
+    height: 100vh;
+}
+
+#placeText{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 35%;
+    height: 55%;
+    font-size: xx-large;
+}
+
+#placeText div{
+    position: relative;
+    top: 25%;
+    font-size: 20px;
+    width: 100%;
+    height: fit-content;
+}
+
+.userTravelDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    row-gap: 70px;
+}
+
+#TravelDetails{
+    
+    /* border: 2px solid red; */
+    width: fit-content;
+    border-radius: 15px;
+}
+
+#bookingLink{
+    background-color: #1e90ff;
+    color: white;
+    font-size: 24px;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#Travelsubmit{
+    background-color: #1e90ff;
+    color: white;
+    font-size: 24px;
+    padding: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    position: relative;
+    left: 200px;
+}
+
+#Travelcancel{
+    background-color: #ff1e69;
+    color: white;
+    font-size: 24px;
+    padding: 13px;
+    border-radius: 4px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.userprofile{
+    background-color: #000000;
+    color: white;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.primaryDetails{
+    background-color: #3D0000;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.TraveluserDetails{
+    color: white;
+    padding: 20px;
+}
+
+.TravelBookingDetails{
+    color: white;
+    padding: 10px;
+    /* margin: 5px; */
+    background-color: #950101;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons{
+    position: absolute;
+    /* border: 2px solid green; */
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+    top: 0;
+    right: 70px;
+}
+
+#bookingPage{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(to left, #d4fc79, #96e6a1);
+}
+
+#bookingPageDetails{
+    position: relative;
+    left: 20px;
+    padding: 20px;
+    font-size: xx-large;
+    font-family:cursive;
+    color: white;
+}
+
+.bookingsItems{
+    padding: 15px;
+}
+
+.bookingsItems input{
+    width: 450px;
+    height: 40px;
+    border-radius: 23px;
+    padding: 4px;
+
+}
+
+.bookingsItems select{
+    width: 450px;
+    height: 40px;
+    border-radius: 23px;
+    padding: 4px;
+
+}
